@@ -4,22 +4,19 @@ If you'd like to run this project using Spring Tool Suite (STS) 4.3, follow the 
  Required Tools
 Spring Tool Suite 4.3+
 Download STS
-
 Java 17+
-
 MySQL Server
-
-
-Internet connection (for Maven to download dependencies)
+Database Name:- assign
 
  Steps to Import & Run
+
+ 
 1. Clone the Repository
 First, clone the repository from GitHub to your local machine:
 
-bash
-
-Edit
 git clone https://github.com/abhishek975/Assignment.git
+
+
 
 2. Open STS and Import as Maven Project
 Open Spring Tool Suite 4.3
@@ -28,12 +25,11 @@ Go to File → Import
 
 Select:
 Maven -> Existing Maven Projects → Click Next
-
 Browse to the root folder of the cloned repository.
-
 STS will automatically detect the pom.xml. Select it and click Finish.
-
 Wait for STS to build the workspace and resolve dependencies via Maven.
+
+
 
 3. Set Up MySQL Database
 Make sure MySQL is running locally on port 3306
@@ -41,18 +37,16 @@ Make sure MySQL is running locally on port 3306
 Create the database manually (if not already created):
 
 sql
-
-Edit
 CREATE DATABASE assign;
 Ensure your credentials match those in application.properties:
 
 properties
-
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/assign
 spring.datasource.username=root
 spring.datasource.password=root
 You can modify these values based on your local MySQL setup.
+
+
 
 4. Run the Project
 In STS, right-click the main class:
